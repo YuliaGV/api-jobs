@@ -52,7 +52,20 @@ public class JobsContext: DbContext
                 Location = "Miami, FL",
                 PostingDate = DateTime.Now,
                 JobType = JobTypeList.FullTime,
-                Description = "Nurse for the intensive care area in a large hospital in New York. At least 3 years of experience"
+                Description = "Nurse for the intensive care area in a large hospital in Miami. At least 3 years of experience"
+
+                
+            }
+        );
+        jobsInit.Add(
+            new Job(){
+                JobId = Guid.Parse("434bb0cc-afba-40f3-a872-980b562d7291"),
+                Title = "Math Teacher",
+                CategoryId = Guid.Parse("434bb0cc-afba-40f3-a872-980b562d7279"),
+                Location = "Orlando, FL",
+                PostingDate = DateTime.Now,
+                JobType = JobTypeList.FullTime,
+                Description = "Math Teacher for High School. At least 2 years of experience"
 
                 
             }

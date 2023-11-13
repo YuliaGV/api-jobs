@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace ApiJobs.Models;
 
@@ -13,6 +14,7 @@ public class Category
     public string Name { get; set;}
     public string Description { get; set;}
 
+    [JsonIgnore]
     public virtual ICollection<Job> Jobs { get; set;}
 
 

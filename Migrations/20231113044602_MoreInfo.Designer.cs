@@ -3,6 +3,7 @@ using System;
 using ApiJobs;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace api_jobs.Migrations
 {
     [DbContext(typeof(JobsContext))]
-    partial class JobsContextModelSnapshot : ModelSnapshot
+    [Migration("20231113044602_MoreInfo")]
+    partial class MoreInfo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -83,7 +86,7 @@ namespace api_jobs.Migrations
                     b.Property<DateTime>("PostingDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamp without time zone")
-                        .HasDefaultValue(new DateTime(2023, 11, 12, 23, 46, 49, 380, DateTimeKind.Local).AddTicks(2826));
+                        .HasDefaultValue(new DateTime(2023, 11, 12, 23, 46, 2, 516, DateTimeKind.Local).AddTicks(5270));
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -105,19 +108,8 @@ namespace api_jobs.Migrations
                             IsActive = false,
                             JobType = 0,
                             Location = "Miami, FL",
-                            PostingDate = new DateTime(2023, 11, 12, 23, 46, 49, 380, DateTimeKind.Local).AddTicks(734),
+                            PostingDate = new DateTime(2023, 11, 12, 23, 46, 2, 516, DateTimeKind.Local).AddTicks(3494),
                             Title = "Registered Nurse"
-                        },
-                        new
-                        {
-                            JobId = new Guid("434bb0cc-afba-40f3-a872-980b562d7291"),
-                            CategoryId = new Guid("434bb0cc-afba-40f3-a872-980b562d7279"),
-                            Description = "Math Teacher for High School. At least 2 years of experience",
-                            IsActive = false,
-                            JobType = 0,
-                            Location = "Orlando, FL",
-                            PostingDate = new DateTime(2023, 11, 12, 23, 46, 49, 380, DateTimeKind.Local).AddTicks(754),
-                            Title = "Math Teacher"
                         });
                 });
 
