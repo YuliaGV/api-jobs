@@ -31,3 +31,8 @@ C:\Users\Usuario\desktop\dotnetprojects\api-jobs\obj\Debug\net7.0\api-jobs.genru
 C:\Users\Usuario\desktop\dotnetprojects\api-jobs\obj\Debug\net7.0\ref\api-jobs.dll
 C:\Users\Usuario\desktop\dotnetprojects\api-jobs\bin\Debug\net7.0\Npgsql.dll
 C:\Users\Usuario\desktop\dotnetprojects\api-jobs\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Usuario\desktop\dotnetprojects\api-jobs\bin\Debug\net7.0\Humanizer.dll
+C:\Users\Usuario\desktop\dotnetprojects\api-jobs\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Usuario\desktop\dotnetprojects\api-jobs\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Usuario\desktop\dotnetprojects\api-jobs\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\Usuario\desktop\dotnetprojects\api-jobs\bin\Debug\net7.0\System.CodeDom.dll

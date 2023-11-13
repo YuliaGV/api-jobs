@@ -8,14 +8,14 @@ namespace ApiJobs.Models ;
 
 public class Job 
 {
-    [Key]
+    //[Key]
     public Guid JobId { get; set; }
   
-    [ForeignKey("CategoryId")]
+    //[ForeignKey("CategoryId")]
     public Guid CategoryId { get; set; }
 
-    [Required]
-    [MaxLength(200)]
+    //[Required]
+    //[MaxLength(200)]
     public string Title { get; set; }
     public string Location { get; set; }
     public DateTime PostingDate { get; set; }
@@ -24,7 +24,9 @@ public class Job
 
     public virtual Category Category { get; set; }
 
-    [NotMapped]
+    public bool IsActive { get; set; }
+
+    //[NotMapped]
     public string Summary { get; set; }
 
 

@@ -2,6 +2,9 @@ using ApiJobs;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -21,7 +24,7 @@ app.MapGet("/dbconn", async ([FromServices] JobsContext dbContext) =>
 {
     try
     {
-        await dbContext.Database.MigrateAsync();
+        await dbContext.Database.EnsureCreatedAsync();
         return Results.Ok("Database connection created");
     }
     catch (Exception ex)
